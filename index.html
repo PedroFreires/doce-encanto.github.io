@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doce Encanto | Calçados e Moda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --doce-rosa: #f4cfce;
+            --doce-vinho: #a67c7c;
+            --doce-bege: #f9f7f2;
+        }
+
+        body { font-family: 'Arial', sans-serif; background-color: #fff; color: #444; }
+
+        /* Banner Principal */
+        .hero-section {
+            background: var(--doce-bege);
+            padding: 80px 0;
+            text-align: center;
+            border-bottom: 5px solid var(--doce-rosa);
+        }
+
+        .logo-font {
+            font-size: 3.5rem;
+            font-weight: serif;
+            color: var(--doce-vinho);
+            letter-spacing: 2px;
+        }
+
+        /* Cartões de Categoria */
+        .category-card {
+            border: none;
+            transition: transform 0.3s;
+            margin-bottom: 30px;
+        }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .category-card img {
+            border-radius: 15px;
+            height: 350px;
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .btn-doce {
+            background-color: var(--doce-vinho);
+            color: white;
+            border-radius: 25px;
+            padding: 10px 30px;
+            border: none;
+        }
+
+        .btn-doce:hover {
+            background-color: #8c6a6a;
+            color: white;
+        }
+
+        /* Seção Utilidades */
+        .utilidades-banner {
+            background-color: var(--doce-rosa);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 50px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="logo-font">DOCE ENCANTO</h1>
+            <p class="lead">Calçados • Moda Adulta • Infantil • Utilidades</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <img src="infantil.jpg" class="card-img-top" alt="Moda Infantil">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Moda Infantil</h4>
+                        <a href="#" class="btn btn-doce">Ver Coleção</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <img src="adulta.jpg" class="card-img-top" alt="Moda Adulta">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Moda Adulta</h4>
+                        <a href="#" class="btn btn-doce">Ver Coleção</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <img src="calcados.jpg" class="card-img-top" alt="Calçados">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Calçados</h4>
+                        <a href="#" class="btn btn-doce">Ver Coleção</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row utilidades-banner align-items-center">
+            <div class="col-md-6">
+                <h2>Utilidades Domésticas</h2>
+                <p>Detalhes que transformam o seu dia a dia e trazem mais conforto para sua casa.</p>
+                <a href="#" class="btn btn-doce" style="background: #fff; color: var(--doce-vinho);">Conhecer Linha Casa</a>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="utilidades.jpg" alt="Utilidades" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-4 border-top">
+        <p>&copy; 2026 Doce Encanto - Feito com carinho.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
